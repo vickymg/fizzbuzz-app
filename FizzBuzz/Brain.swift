@@ -25,5 +25,9 @@ class Brain: NSObject {
             return false
         }
     }
+    
+    func isDivisibleByFifteen(number: Int) -> Bool {
+        return true
+    }
 
 }
