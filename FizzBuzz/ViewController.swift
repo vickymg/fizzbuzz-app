@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             numberButton.setTitle("\(unwrappedScore)", forState: .Normal)
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
@@ -54,6 +54,11 @@ class ViewController: UIViewController {
         let response = unwrappedGame.play(move)
         gameScore = response.score
     }
+    
+    @IBAction func playAgainTapped(sender: UIButton) {
+        viewDidLoad()
+    }
+    
     
     @IBAction func buttonTapped(sender: UIButton) {
         switch sender {
