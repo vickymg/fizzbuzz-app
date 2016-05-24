@@ -68,7 +68,6 @@ class ViewController: UIViewController {
         default:
             print("Invalid selection")
         }
-        play(Move.FizzBuzz)
     }
 }
 
